@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPS Game</title>
+</head>
+<body>
+   <section id="intro">
+    <div>
+        <h1>Are you ready?</h1>
+        <div class="btn">
+            <button id="beginBtn">Let's begin</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+   </section> 
+
+
+   <section id="game">
+    <div class="scoreTable">
+        <div class="userScore">
+          <p style="font-size: 40px;">You</p>  
+          <span style="font-size: 80px;" id="userPoint">0</span>
+            
+        </div>
+        <div class="result_table">
+        <p style="font-size: 40px;"> WIN: <span  id="winPoint"> 0</span></p>
+        <p style="font-size: 40px;"> LOSE: <span  id="losePoint"> 0</span></p>
+         </div>
+       <div class="compScore">
+      <p style="font-size: 40px;">Computer</p> 
+      <span style="font-size: 80px;" id="pcPoint">0</span>        
+    </div>
+    </div>
+
+    <div class="hands_container">
+    <div>
+        <img id="humanHand" src="./images/r.png" alt="rock">
+    </div>
+<div class="result-container">
+        <p id="win">You win</p>
+        <p id="lose">You lose</p>
+      </div>
+    <div>
+        <img id="computerHand" src="./images/r.png" alt="rock">
+    </div>
+    </div>
+
+    
+
+    <div class="buttons_container">
+        <button onclick="rockBtn()">R</button>
+        <button onclick="paperBtn()">P</button>
+        <button onclick="scissorBtn()">S</button>
+    </div>
+   </section>
+
+
+
+ <script src="variable.js"></script>
+ <script src="main.js"></script>   
+</body>
+</html>

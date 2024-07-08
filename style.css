@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#intro {
+    background-image: linear-gradient(to right, #355C7D,#6C5B7B,#C06C84);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#intro h1 {
+font-size: 70px;
+margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.btn button {
+    background-color: #fff;
+    padding: 10px 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+
+.btn button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Game */
+
+#game {
+    background-image: linear-gradient(to right, #2c3e50, #3498db);
+    height: 100vh;
+    display: none;
+}
+
+.scoreTable {
+    display: flex;
+    justify-content: space-around;
+}
+
+.userScore, .compScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.result_table {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hands_container {
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 50px;
+   margin-top: 50px;
+}
+
+.hands_container div {
+    width: 350px;
+}
+
+.hands_container div img {
+    width: 100%;
+}
+
+#computerHand {
+    transform: scaleX(-1);
+}
+
+.buttons_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons_container button {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: none;
+font-size: 30px;
+cursor: pointer;
+margin-top: 30px;
+transition: all .4s;
+}
+
+.buttons_container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #lose,
+  #win {
+    display: none;
+    font-size: 50px;
+    
+  }
+  
+  #win {
+    color: #07ff30;
+  }
+  
+  #lose {
+    color: #f51404;
+  }
